@@ -216,12 +216,14 @@ footer a {
 
 .back{
     color: rgb(226, 132, 255);
-    position: absolute;
-    right: 7px;
+    position: fixed;
+    right: 0px;
+    bottom: 5vh;
+    
 
 }
 
-/*  id */
+/* id */
 
 #top{
     visibility: hidden;
