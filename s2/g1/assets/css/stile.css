@@ -219,8 +219,18 @@ footer a {
     position: fixed;
     right: 0px;
     bottom: 5vh;
-    
+}
 
+.social{
+    position: fixed;
+    right: 0px;
+    bottom: 23vh;
+}
+
+.calendar{
+    position: fixed;
+    right: 0px;
+    bottom: 16vh;
 }
 
 /* id */
