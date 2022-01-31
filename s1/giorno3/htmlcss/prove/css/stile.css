@@ -1,0 +1,21 @@
+/* HTML */
+
+/* BODY */
+/* HEAD */
+iframe{
+    margin-bottom: 2em;
+}
+/* MAIN */
+form{
+    background-color: rgb(112, 245, 112);
+    text-align: center;
+    padding: 30px;
+    width: 500px;
+    
+}
+
+/* ELEMENTI DEL MAIN */
+
+input{
+    margin: 0.5em;
+}

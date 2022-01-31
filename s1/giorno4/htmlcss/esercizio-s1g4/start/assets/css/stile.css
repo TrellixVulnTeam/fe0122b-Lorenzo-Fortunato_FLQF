@@ -1,0 +1,142 @@
+/* IMPOSTAZIONI GENERALI */
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/sfondo.png);
+}
+
+/* BODY */
+body{
+    padding: 15px;
+    letter-spacing: 1.2px;
+    
+
+}
+
+/* HEADER */
+header{
+    background-color: rgb(14, 127, 165);
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+    box-shadow: 3px 3px 3px gray;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+
+}
+
+header div{
+    margin-top: 1.3rem;
+}
+header p{
+    margin: 20px;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+/* ELEMENTI DELL'HEADER */
+header nav{
+    margin: 1.2rem;
+}
+
+header li{
+    list-style: none;
+    line-height: 15px;
+}
+
+header li::before{
+    content: "->" ;
+}
+
+header li::after{
+    content: "<-" ;
+}
+
+.intestazione{
+    text-align: center;
+}
+
+.testocol{
+    color: white;
+}
+
+hr{
+    display: none;
+}
+
+/* MAIN */
+main{
+    background-color: white;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+main p{
+    margin-bottom: 1.2rem;
+}
+
+article{
+    margin-top: 50px;
+    padding: 12px;
+}
+
+article h1 + p{
+    color: rgb(153, 149, 149);
+}
+
+h1{
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 1.4em;
+}
+
+p strong{
+    color: purple;
+}
+
+ol, ul{
+    margin-left: 2.5rem;
+    margin-bottom: 1.4rem;
+    line-height: 20px;
+
+}
+
+ul code{
+    background-color: rgb(189, 186, 186);
+    border-radius: 3px;
+    border: 1px solid rgb(172, 172, 172);
+}
+
+/* TABELLE */
+table{
+    text-align: center;
+    width: 100%;
+}
+
+caption{
+    font-weight: bold;
+    font-style: italic;
+}
+
+thead{
+    background-color: rgb(14, 127, 165);
+}
+
+tbody:nth-child(odd){
+    color: gray;
+}
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+
+
+

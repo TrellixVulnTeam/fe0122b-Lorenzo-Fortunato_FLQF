@@ -1,0 +1,186 @@
+/*  HEAER */
+
+header{
+    background-color: black;
+    padding: 3rem;
+    line-height: 1.5;
+
+}
+
+header img{
+    width: 190px;
+}
+
+
+/* BODY */
+
+body{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+    color: #393d41;
+    padding: 1.2rem;
+    width: 100%;
+}
+
+/* MAIN */
+main{
+    font-size: 1.2rem;
+}
+
+
+/* ELEMENTI DEL MAIN */
+section{
+    padding: 1.2rem;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-bottom: 3em;
+}
+
+
+h1{
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 3rem;
+  
+
+}
+
+main h3{
+    margin-top: 2rem;
+}
+
+main p{
+    padding: 1.2rem 2rem 2rem 2rem;
+    
+
+}
+
+input{
+    background-color: #f04c2f;
+    text-transform: uppercase;
+    color: white;
+    padding: 1.1rem 2rem 1.1rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: none;
+    margin-bottom: 1.2rem;
+}
+
+input:hover{
+    background-color: white;
+    color: #f04c2f;
+    border: 1px solid rgb(192, 191, 191);
+}
+
+main div{
+    margin: 2rem;
+}
+
+div img{
+    width: 100%;
+}
+
+
+
+div:nth-child(7){
+    background-color: #f04c2f;
+    color: white;
+    padding: 28px;
+    margin-bottom: 3.8rem;
+}
+
+div:nth-child(7) h2{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+    font-size: 1.8rem;
+}
+
+
+blockquote{
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 1.4rem;
+    line-height: 2rem;
+}
+
+figcaption{
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+figcaption span{
+    font-size: 0.8rem;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: #25a2c3;
+    color: white;
+    line-height: 1.8;
+ 
+    
+}
+
+footer div{
+    padding: 1.3rem;
+}
+footer h2{
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    padding-top: 2.4rem;
+}
+
+footer a{
+    color: white;
+}
+
+footer > p{
+    padding: 1.3rem;
+    padding-bottom: 5rem;
+}
+
+hr{
+    width: 170px;
+}
+
+footer i{
+    margin-right: 4px;
+}
+
+/* GENERICI */
+
+.titoli{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+
+}
+
+.bordermargin{
+    border: 2px solid #dee1e3;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.margin{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    
+}
+
+#immaginecodice{
+    border-radius: 100%;
+    width: 80%;
+}
