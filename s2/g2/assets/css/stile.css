@@ -230,7 +230,7 @@ footer a {
 }
 
 
-/* mediaqueries */
+/* media screen */
 @media screen and (min-width: 516px) {
     main article h1 {
         text-align: center;
@@ -249,7 +249,7 @@ footer a {
     }
 
     
-    ul {
+    ul, ol {
         line-height: 2.5rem
     }
 
@@ -282,6 +282,37 @@ footer a {
     }
 }
 
+@media screen and (min-width: 1000px) {
+    header div img {
+        width: 25%;
+        height: auto;
+    }
+
+    header div p {
+        font-size: 2rem;
+    }
+
+    main {
+        font-size: 2rem;
+    }
+
+    ul, ol {
+        line-height: 3.5rem;
+    }
+
+    article p img {
+        width: 10%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        font-size: 2rem;
+    }
+}
+
+/* media print */
 @media print {
     header {
         display: none;
