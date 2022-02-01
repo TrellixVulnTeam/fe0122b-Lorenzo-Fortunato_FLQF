@@ -278,7 +278,15 @@ footer a {
 @media screen and (min-width: 600px) {
     section {
         text-align: center;
-        
+    }
+
+    section h2 {
+        position: absolute;
+        left: 0; 
+        right: 0; 
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 116px;
     }
 }
 
