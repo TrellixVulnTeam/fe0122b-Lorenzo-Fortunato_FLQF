@@ -339,19 +339,21 @@ footer a {
 main {
     display: grid;
     grid-template-columns: 1f 1f;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-    "article aside"
-    ". section";
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "article aside"
+        ". ."
+        ". section";
 }
 
 .item1 {
     grid-area: article;
-    grid-row: 1/3;
+    grid-row: 1/4;
 }
 
 .item2 {
     grid-area: section;
+    grid-row: 3/2;
 }
 
 .item3 {
