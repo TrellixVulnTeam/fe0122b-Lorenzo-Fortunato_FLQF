@@ -344,7 +344,7 @@ main {
         "article aside"
         ". ."
         ". section";
-    column-gap: 10px;
+    column-gap: 12px;
 }
 
 .item1 {
@@ -358,6 +358,12 @@ main {
     margin-top: 18px;
     position: sticky;
     top: 287px;
+    font-size: 1.1rem;
+   
+}
+
+.item2 p {
+    margin-top: 1.1rem;
 }
 
 .item3 {
