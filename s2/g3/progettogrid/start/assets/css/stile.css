@@ -338,12 +338,13 @@ footer a {
 
 main {
     display: grid;
-    grid-template-columns: 1f 1f;
+    grid-template-columns: 60% auto;
     grid-template-rows: auto auto auto;
     grid-template-areas:
         "article aside"
         ". ."
         ". section";
+    column-gap: 10px;
 }
 
 .item1 {
@@ -354,6 +355,9 @@ main {
 .item2 {
     grid-area: section;
     grid-row: 3/2;
+    margin-top: 18px;
+    position: sticky;
+    top: 287px;
 }
 
 .item3 {
