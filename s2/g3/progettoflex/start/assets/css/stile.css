@@ -370,4 +370,15 @@ footer a {
     .orizzontale {
         flex-direction: column;
     }
+
+    .pippo {
+        display: flex;
+      
+    }
+
+    .pippo :nth-child(1) {
+        flex-basis: 70%;
+    }
+
+ 
 }
