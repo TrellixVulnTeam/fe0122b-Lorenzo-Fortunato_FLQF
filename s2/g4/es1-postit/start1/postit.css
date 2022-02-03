@@ -1,0 +1,54 @@
+
+/* main */
+main {
+    font-family: 'Indie Flower', cursive;
+    background-color: rgb(97, 97, 97);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+    main div {
+        width: 300px;
+        height: 180px;
+        text-align: center;
+        padding-top: 50px;
+        margin: 2%;
+        box-shadow: 5px 5px 10px 1px #333333;
+        
+        
+    }
+
+    main div h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    div p {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+/*  classi */
+
+.chiaro {
+    background-color: beige;
+    background-image: linear-gradient(rgb(238, 238, 169), grey);
+    transform: rotate(-10deg);
+}
+
+.verdino {
+    background-color: rgb(124, 238, 124);
+    background-image: linear-gradient(rgb(124, 238, 124), grey);
+    transform: rotate(10deg);
+}
+
+.blue {
+    background-color: rgb(153, 153, 248);
+    background-image: linear-gradient(rgb(153, 153, 248), grey);
+    transform: rotate(-10deg);
+}
+
+
+/* div-post-it */
