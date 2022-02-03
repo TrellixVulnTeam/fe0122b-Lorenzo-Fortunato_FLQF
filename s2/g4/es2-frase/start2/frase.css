@@ -8,3 +8,26 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+
+
+/* esercizio */
+
+#testoAlternato{
+    border: 3px solid grey;
+    width: 600px;
+    padding: 25px;
+    color: rgb(87, 87, 87);
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.parole {
+    
+
+}
+
+@keyframes parole {
+    /* percentuali */
+}
