@@ -9,20 +9,27 @@
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/stile.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <img src="assets/images/logo.png" alt="Il nostro logo">
-    <!-- OCCHIO AI LINK -->
 
-    <ul>
-      <li><a href="index.html" title="Home"></a> Home</li>
-      <li><a href="chi-siamo.html" title="Chi Siamo"></a> Chi Siamo</li>
-      <li><a href="contatti.html" title="Contatti"></a> Contatti</li>
-    </ul>
-    <!-- OCCHIO AI LINK -->
-    <a href="#registrati">Registrati</a>
+    <img src="assets/images/logo.png" alt="Il nostro logo">
+
+    <nav>
+      <ul>
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="chi-siamo.html" title="Chi Siamo">Chi Siamo</a> </li>
+        <li><a href="./contatti.html" title="Contatti">Contatti</a></li>
+      </ul>
+    </nav>
+    
+   <div class="colorbtn">
+     <a href="#registrati" >Registrati</a>
+    </div>
 
     <!-- MENU A SCOMPARSA -->
   </header>
@@ -31,7 +38,9 @@
     <section> 
       <h1>Diventa un developer EPICO</h1>
       <p>Diventa un developer EPICO e ti troviamo noi il lavoro. Scommettiamo su di te: paghi metà corso, l'altra metà solo quando inizi a lavorare.</p>
-      <a href="contatti.html" title="Chiedi info">Chiedi info</a> 
+      <div class="colorbtn">
+        <a href="contatti.html" <a href="registrati" title="Chiedi info">Chiedi info</a>
+      </div> 
       
     </section>
 
@@ -60,7 +69,10 @@
     <div>
       <h2>Ma chi è il developer oggi?</h2>
       <p>Se non lo sai te lo diciamo noi: il futuro è dei developer</p>
-      <a href="contatti.html" title="Chiedi info">Scrivici!</a> 
+      <div class="colorbtn">
+        <a href="./contatti.html" title="Contatti" >Scrivici!</a>
+      </div>
+
     </div>
 
     <aside>
@@ -98,15 +110,17 @@
       <div>
         <h4>Ti piace ciò che vedi? Condividilo con i tuoi amici!</h4>
         <div>
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-linkedin"></i>
-          <i class="fab fa-instagram"></i>
+          <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.linkedin.com/home" title="Linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-      <!-- CONTROLLA L'ANCORA INTERNA -->
-      <form action=""><a href="registrati"></a>
+
+      <form action=""><a name="registrati"></a>
         <input type="email" id="email">
         <label for="email">Iscriviti alla nostra newsletter</label>
+
+        <input type="button" value="Va bene!" class="colorbtn">
       </form>
     </div>
     <p>&copy; 2021 Epicode Web Developer school - Via Appia 1, 00100 Roma (RM) - Tel. 06-12345678</p>

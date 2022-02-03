@@ -1,10 +1,38 @@
-/* IMPOSTAZIONI GENERALI */
-
+/* BODY */
+body {
+    font-family:'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #000;
+}
 /* HEADER */
+header {
+    background-color: white;
+    padding: 20px;
+    
+    
+}
 
+    header img {
+        width: 150px;
+        height: auto;
+    }
+
+
+
+    ul {
+        list-style-type: none;
+        line-height: 2rem;
+    }
 /* MAIN */
 
 /* FOOTER */
+
+/* generici */
+a {
+    text-decoration: none;
+}
+
 
 /* RESPONSIVE */
 
@@ -14,7 +42,13 @@
 
 /* classi */
 .colorbtn {
-
+    background: rgb(64,219,255);
+    background: linear-gradient(90deg, rgba(64,219,255,1) 0%, rgba(165,154,173,1) 100%);
+    width: 120px;
+    padding: 6px 12px;
+    color: white;
+    text-align: center;
+    margin-top: 11px;
 }    
 
 .icone {
@@ -22,5 +56,5 @@
 }
 
 .table {
-    
+
 }
