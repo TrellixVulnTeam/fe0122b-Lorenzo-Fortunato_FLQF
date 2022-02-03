@@ -18,13 +18,31 @@ header {
         height: auto;
     }
 
-
+    header nav {
+        font-size: 1.1rem;
+    }
 
     ul {
         list-style-type: none;
         line-height: 2rem;
     }
 /* MAIN */
+main {
+    text-align: center;
+}
+    
+    main section {
+        background-image: url(../images/banner.jpg);
+        background-size: cover;
+        color: white;
+        text-align: left;
+        padding: 20px;
+       
+    }
+
+    main section h1 {
+        margin-top: 20px;
+    }
 
 /* FOOTER */
 
@@ -32,7 +50,19 @@ header {
 a {
     text-decoration: none;
 }
+ h1 {
+     font-size: 2.5rem;
+ }
 
+ h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 /* RESPONSIVE */
 
@@ -44,15 +74,19 @@ a {
 .colorbtn {
     background: rgb(64,219,255);
     background: linear-gradient(90deg, rgba(64,219,255,1) 0%, rgba(165,154,173,1) 100%);
-    width: 120px;
+    width: 88px;
     padding: 6px 12px;
-    color: white;
     text-align: center;
     margin-top: 11px;
+    font-size: 1.1rem;
 }    
 
-.icone {
+.colorbtn a {
+    color: white;
+}
 
+.icone {
+    color: red;
 }
 
 .table {
