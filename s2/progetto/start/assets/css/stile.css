@@ -79,6 +79,15 @@ p {
     margin-bottom: 1rem;
 }
 
+form {
+    margin-top: 20px;
+}
+
+form input {
+    width: 294px;
+    height: 2.1rem;
+    
+}
 /* RESPONSIVE */
 
 
@@ -89,12 +98,16 @@ p {
 .colorbtn {
     background: rgb(64,219,255);
     background: linear-gradient(90deg, rgba(64,219,255,1) 0%, rgba(165,154,173,1) 100%);
-    width: 88px;
     padding: 6px 12px;
     text-align: center;
-    margin-top: 11px;
     font-size: 1.1rem;
+    width: 302px;
 }    
+
+.spacebtn {
+    width: 88px;
+    margin-top: 11px;
+}
 
 .colorbtn a {
     color: white;
@@ -129,4 +142,5 @@ p {
     line-height: 1.4;
     
 }
+
 
