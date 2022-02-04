@@ -86,8 +86,12 @@ form {
 }
 
 form input {
-    width: 294px;
+    width: 274px;
     height: 2.1rem;
+}
+
+.pcontatti {
+    font-size: 0.9rem;
 }
 /* RESPONSIVE */
 
@@ -103,7 +107,7 @@ form input {
     text-align: center;
     font-size: 1.1rem;
     width: 302px;
-}    
+}  
 
 .spacebtn {
     width: 88px;
