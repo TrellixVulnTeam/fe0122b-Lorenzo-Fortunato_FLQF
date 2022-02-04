@@ -52,6 +52,14 @@ main {
         width: 80%;
     }
 
+    main img {
+        width: 100%;
+        margin: 20px 0 20px 0;
+    }
+
+    figcaption {
+        font-size: 1.1rem;
+    }
 /* FOOTER */
 footer {
     background-color: rgb(194, 193, 193);
@@ -123,8 +131,32 @@ form input {
     font-size: 2rem;
 }
 
-.table {
+table {
+    margin: 40px 0 40px 0;
+    width: 100%;
+    font-size: 1rem;
 
+
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+thead {
+    background-color: rgb(139, 139, 247);
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(159, 231, 255);
+}
+
+td, th {
+    padding: 13px 23px;
+    border: 1px solid white;
 }
 
 .padding {
@@ -167,3 +199,4 @@ form input {
     margin: auto;
     margin-bottom: 20px;
 }
+
