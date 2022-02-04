@@ -4,6 +4,7 @@ body {
     font-size: 1.5rem;
     line-height: 1.8;
     color: #000;
+
 }
 /* HEADER */
 header {
@@ -29,6 +30,8 @@ header {
 /* MAIN */
 main {
     text-align: center;
+   
+    
 }
     
     main section {
@@ -38,14 +41,25 @@ main {
         text-align: left;
         padding: 20px;
        
+       
     }
 
     main section h1 {
         margin-top: 20px;
     }
 
-/* FOOTER */
+    main aside img {
+        width: 80%;
+    }
 
+/* FOOTER */
+footer {
+    background-color: rgb(194, 193, 193);
+}
+
+    h4 {
+        margin-top: 2.2rem;
+    }
 /* generici */
 a {
     text-decoration: none;
@@ -56,6 +70,7 @@ a {
 
  h2 {
     font-size: 2rem;
+    margin-top: 1.3rem;
 }
 
 p {
@@ -87,8 +102,31 @@ p {
 
 .icone {
     color: red;
+    font-size: 2rem;
 }
 
 .table {
 
 }
+
+.padding {
+    padding: 20px;
+}
+
+#szblue {
+    background-color: rgb(1, 1, 61);
+    color: white;
+    padding-top: 1.3rem;
+    padding-bottom: 3rem;
+    
+}
+
+#white {
+    color: white;
+}
+
+.divinterlinea {
+    line-height: 1.4;
+    
+}
+
