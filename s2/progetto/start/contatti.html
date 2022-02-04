@@ -1,21 +1,88 @@
 <!DOCTYPE html>
 <html lang="it">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="">
-  <title></title>  
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Epicode School: il punto di partenza per la tua professione di Developer">
+    <title>Epicode - Formazione Web Developer</title> 
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/stile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  </head>
 
 <body>
   <header>
-    <a name="registrati"></a>
+
+    <img src="assets/images/logo.png" alt="Il nostro logo">
+
+    <nav>
+      <ul>
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="chi-siamo.html" title="Chi Siamo">Chi Siamo</a> </li>
+        <li><a href="./contatti.html" title="Contatti">Contatti</a></li>
+      </ul>
+    </nav>
+    
+   <div class="colorbtn spacebtn">
+     <a href="#registrati" >Registrati</a>
+    </div>
+
+    <!-- MENU A SCOMPARSA -->
   </header>
 
   <main>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, voluptatum obcaecati veritatis ab delectus perspiciatis voluptatem exercitationem? Dolor ad odio, saepe nesciunt placeat doloribus veniam officiis deleniti quidem nisi doloremque.</div>
+    <div>
+      <h2>Contatti</h2>
+      <form action="epicode.php" method="post">
+        <input type="text" name="nomecognome" id="nomecognome" placeholder="Nome e Cognome" class="inputcontatti">
+        <input type="email" name="email" id="email" placeholder="Indirizzo valido nome@casella.com" class="inputcontatti">
+        <textarea name="text" id="textarea" cols="39" rows="10" placeholder="Scrivi in breve il tuo messaggio" class="inputcontatti"></textarea>
+        <input type="submit" value="Invia il messaggio" class="btnform inputcontatti">
+      </form>
+    </div>
+
+    <div>
+      <div>
+        <h3>Sede formativa</h3>
+        <p>via Appia 1 00100 Roma (RM)</p>
+        <p>info@epicode.school +39 06123456</p>
+      </div>
+      <div>
+        <h3>Lavora con noi</h3>
+        <p>Per poterti candidare ad un ruolo da docente invia il tuo cv a job@epicode.school</p>
+      </div>
+    </div>
   </main>
+
+  <footer class="padding">
+    <div>
+      <div>
+        <h4>Chi siamo</h4>
+        <p>Epicode School nasce con l'obiottivo di rivoluzionare la formazione in ambito tech</p>
+      </div>
+      <div>
+        <h4>Ti piace ciò che vedi? Condividilo con i tuoi amici!</h4>
+        <div>
+          <a href="https://www.facebook.com/" title="Facebook" target="_blank" class="icone"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.linkedin.com/home" title="Linkedin" target="_blank" class="icone"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/" title="Instagram" target="_blank" class="icone"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <form action=""><a name="registrati"></a>
+        <!--  OCCHIO AL TASTO -->
+        <label for="email">Iscriviti alla nostra newsletter</label> <br>
+        <input type="email" id="email"> <br>
+        <input type="button" value="Va bene!" class="colorbtn">
+        
+      </form>
+    </div>
+    <p>&copy; 2021 Epicode Web Developer school - Via Appia 1, 00100 Roma (RM) - Tel. 06-12345678</p>
+  </footer>
 
 </body>
 
