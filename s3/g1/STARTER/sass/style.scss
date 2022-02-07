@@ -1,0 +1,44 @@
+@import 'variabili';
+@import 'bottone';
+
+body {
+    background-image: url(../img/tramonto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: $margini;
+    color: $colore2;
+    
+
+}
+
+.container {
+    width: $dimensioni;
+    margin: $marginecontainer;
+    text-align: $allineamento;
+}
+
+div img {
+    width: $img;
+    margin: $margini
+}
+
+div p {
+    margin-bottom: $margini
+}
+ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+    color: $colore2;
+    
+    
+}
+
+li a {
+    text-decoration: $sottolinea;
+    color: $colore2
+}
+
+span a {
+    text-decoration: $sottolinea;
+}

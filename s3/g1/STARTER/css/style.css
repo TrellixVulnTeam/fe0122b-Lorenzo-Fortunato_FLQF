@@ -1,0 +1,42 @@
+span a {
+  background-color: red;
+  color: white;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px; }
+  span a:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red; }
+
+body {
+  background-image: url(../img/tramonto.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  color: white; }
+
+.container {
+  width: 100%;
+  margin: auto;
+  text-align: center; }
+
+div img {
+  width: 90%;
+  margin: 30px; }
+
+div p {
+  margin-bottom: 30px; }
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  color: white; }
+
+li a {
+  text-decoration: none;
+  color: white; }
+
+span a {
+  text-decoration: none; }

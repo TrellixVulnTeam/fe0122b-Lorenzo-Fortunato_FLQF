@@ -1,0 +1,27 @@
+$colore: red;
+$colorefont: white;
+$larghezza: 200px;
+$colore2: white;
+$colorefont2: red;
+$spazi: 10px;
+$arrotond: 10px;
+$bordi: 1px solid red;
+$margini: 30px;
+$sottolinea: none;
+
+
+span a {
+    background-color: $colore;
+    color: $colorefont;
+    width: $larghezza;
+    padding: $spazi;
+    border-radius: $arrotond;
+    
+
+
+    &:hover {
+        background-color: $colore2;
+        color: $colorefont2;
+        border: $bordi;
+    }
+}
