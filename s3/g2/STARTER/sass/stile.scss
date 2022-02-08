@@ -1,0 +1,81 @@
+@import 'variabili';
+
+
+// mixin //
+@mixin testa {
+    background-color: $colore-sfondo;
+    color: $colore-testo;
+
+}
+
+body {
+    font-family: $famiglia;
+    
+}
+
+
+header {
+    @include testa();
+    margin-bottom: $margini;
+}
+
+section {
+    margin-bottom: $margini;
+}
+
+#content {
+    margin-left: 50px;
+    margin-right: 50px;
+    
+
+    
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+article {
+    width: 60%;
+}
+
+
+
+// sidebar //
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: $margini;
+
+    a {
+        text-decoration: none;
+        border: 1px solid grey;
+        background-color: $colore-sfondo2;
+        border-radius: 5px;
+        padding: $spazi-interni;
+
+        &:hover {
+            background-color: $colore-sfondo3;
+        }
+    }
+
+   
+}
+
+#sidebar ul li{
+    list-style-type: none;
+    margin: $margini;
+    border-bottom: 2px dashed grey;
+    padding: $spazi-interni + 5px;
+    width: 100px;
+    
+    
+}
+
+
+
+
