@@ -23,11 +23,56 @@
     margin-left: 30px;
 }
 
-.parole {
+#interfacce {
+    color: rgb(173, 173, 173);
+    animation-name: interfacceweb;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in;
     
-
+    
 }
 
-@keyframes parole {
-    /* percentuali */
+@keyframes interfacceweb {
+    0% {opacity: 0;}
+    100% {opacity: 1; transform: translateY(-40%);}
+    
+    
+}
+
+#single {
+    color: rgb(173, 173, 173);
+    position: relative;
+    left: -130px;
+    animation-name: singleapp;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-iteration-count:infinite;
+    visibility: hidden;
+    
+}
+
+@keyframes singleapp {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+#app {
+    color: rgb(173, 173, 173);
+    position: relative;
+    left: -267px;
+    animation-name: app;
+    animation-duration: 3s;
+    animation-delay: 7s;
+    animation-iteration-count:infinite;
+    visibility: hidden;
+   
+    
+}
+
+@keyframes app {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
 }
