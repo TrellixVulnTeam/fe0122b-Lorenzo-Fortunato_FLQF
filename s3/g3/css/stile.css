@@ -1,0 +1,53 @@
+h2 {
+    text-align: center;
+}
+
+.es1 {
+    background-color: blue;
+    color: white;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.es2 {
+    background-color: yellow;
+    color: black;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.es3 {
+    background-color: green;
+    color: white;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.es4 {
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.es5 {
+    background-color: rgb(124, 255, 255);
+    color: white;
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.es5piccolo {
+    background-color: grey;
+    color: white;
+    padding: 3px;
+    border: 1px solid black;
+    
+}
+
+.es6 {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border: 1px solid black;
+}
