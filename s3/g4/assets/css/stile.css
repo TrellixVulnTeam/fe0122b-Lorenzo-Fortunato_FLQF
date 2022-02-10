@@ -1,0 +1,46 @@
+main {
+    margin: 0px 50px;
+}
+
+.sezioneimg {
+    margin: 40px auto;
+}
+
+img {
+    width:100%;
+}
+
+.valore {
+    padding-top: 45px;
+}
+
+.loremverde {
+    background-color: rgb(1, 102, 1);
+    margin: 0px 80px;
+    color: white;
+    padding: 40px;
+}
+
+.carte {
+    padding: 75px;
+}
+
+footer {
+    padding: 30px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* mediaquery */
+@media screen and (max-width: 768px) {
+    .loremverde {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+    
