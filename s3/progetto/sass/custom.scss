@@ -1,6 +1,39 @@
+// partial //
 @import "function";
+@import "mixin";
+
+
+
+// variabili //
+$margini: 10px;
+
+
 main {
+    @include dimensionamenti;
     font-size: 0.9rem;
+
+    .present {
+        margin-bottom: $margini + 10px;
+    }
+
+    .carte {
+        padding: $margini + 5px;
+    }
+}
+
+aside {
+    @include dimensionamenti;
+}
+
+footer {
+    @include dimensionamenti;
+    text-align: center;
+}
+
+
+// generici //
+#professionisti {
+    margin-bottom: $margini + 5px;
 }
 
 img {

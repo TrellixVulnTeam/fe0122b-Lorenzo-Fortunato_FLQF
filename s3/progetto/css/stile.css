@@ -1,5 +1,26 @@
 main {
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 0.9rem; }
+  main .present {
+    margin-bottom: 20px; }
+  main .carte {
+    padding: 15px; }
+
+aside {
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+footer {
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center; }
+
+#professionisti {
+  margin-bottom: 15px; }
 
 img {
   width: 100%; }
