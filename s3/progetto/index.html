@@ -4,33 +4,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Siamo i migliori in Italia"> 
+    <title>Nome Azienda | Italia</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/stile.css">
 </head>
+
 <body>
     <header>
-        <nav></nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Nome azienda</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                
+                <!-- menu a destra dal panino! -->
+
+                <ul class="navbar-nav"> 
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Servizi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contatti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Vieni a trovarci</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://www.facebook.com/" target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://www.youtube.com/" target="_blank" title="Youtube"><i class="bi bi-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </nav>
     </header>
 
     <main>
         <section>
-
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <img src="img/2.1-lavorare-in-team.jpg" alt="Il nostro Team">
+                    </div>
+                    <div class="col-md-5">
+                        <h2>Il Team di professionisti</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime qui nesciunt aperiam necessitatibus reiciendis minus amet autem laudantium quam aut sunt assumenda, temporibus culpa doloremque repudiandae et illum fugiat nam.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section>
-
-        </section>
     </main>
 
 
     <aside>
         <!-- partnership -->
+        <section>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                  <div class="card">
+                    <img src="img/2.1-lavorare-in-team.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Partner 1</h5>
+                      <p class="card-text text-center">Con noi da 10 anni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="img/2.1-lavorare-in-team.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Partner 2</h5>
+                      <p class="card-text text-center">Con noi da 10 anni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="img/2.1-lavorare-in-team.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Partner 3</h5>
+                      <p class="card-text text-center">Con noi da 10 anni</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="img/2.1-lavorare-in-team.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Partner 4</h5>
+                      <p class="card-text text-center">Con noi da 10 anni</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section> 
+
+        <div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/b2ap3_large_totw_network_profile_400.jpg" class="profilo">
+                    <blockquote>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium ea libero, facilis amet tempora est debitis!"</blockquote>
+                    <figcaption>- Mario Rossi</figcaption>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/b2ap3_large_totw_network_profile_400.jpg" class="profilo">
+                    <blockquote>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium ea libero, facilis amet tempora est debitis!"</blockquote>
+                    <figcaption>- Mario Rossi</figcaption>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/b2ap3_large_totw_network_profile_400.jpg" class="profilo">
+                    <blockquote>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium ea libero, facilis amet tempora est debitis!"</blockquote>
+                    <figcaption>- Mario Rossi</figcaption>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
     </aside>
 
     <footer>
-
+        <p>Nome azienda - </p>
     </footer>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
