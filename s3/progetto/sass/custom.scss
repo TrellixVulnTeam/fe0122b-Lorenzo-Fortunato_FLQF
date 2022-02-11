@@ -11,7 +11,8 @@ $margini: 10px;
 // css //
 
 .intestazione {
-    background-color: rgb(117, 250, 117);
+    background-color: rgb(121, 255, 121);
+    color: color-contrast(rgb(121, 255, 121));
 }
 
 main {
@@ -48,10 +49,15 @@ footer {
 
 }
 
+.funcolore{
+    background-color: green;
+    color: color-contrast(green);
+}
 
 // generici //
 #professionisti {
     margin-bottom: $margini + 5px;
+    padding: 0px;
 }
 
 img {
