@@ -1,9 +1,17 @@
+h6 {
+  background-color: #1c1ce6;
+  color: white; }
+
 @media screen and (min-width: 800px) {
   .present {
     margin-bottom: 20px; } }
 
 @media screen and (max-width: 760px) {
   .carte {
+    display: none; } }
+
+@media screen and (min-width: 761px) {
+  .cartehidden {
     display: none; } }
 
 .intestazione {

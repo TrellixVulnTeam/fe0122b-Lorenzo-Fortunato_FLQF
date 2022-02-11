@@ -1,0 +1,17 @@
+
+
+
+@function color-contrast($colore) {
+    @if (lightness($colore)>50) {
+        @return black;
+    }
+    @else {
+        @return white;
+    }
+}
+
+
+h6 {
+    background-color: rgb(28, 28, 230);
+    color: color-contrast(black);
+}
