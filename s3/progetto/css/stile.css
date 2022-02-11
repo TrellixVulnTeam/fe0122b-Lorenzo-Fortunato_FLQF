@@ -1,3 +1,14 @@
+@media screen and (min-width: 800px) {
+  .present {
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 760px) {
+  .carte {
+    display: none; } }
+
+.intestazione {
+  background-color: #75fa75; }
+
 main {
   padding: 20px;
   margin-top: 10px;
@@ -6,7 +17,8 @@ main {
   main .present {
     margin-bottom: 20px; }
   main .carte {
-    padding: 15px; }
+    padding: 15px;
+    background-color: #ffc250; }
 
 aside {
   padding: 20px;
@@ -18,15 +30,28 @@ footer {
   margin-top: 10px;
   margin-bottom: 10px;
   text-align: center;
-  background-color: grey; }
+  background-color: #75fa75; }
   footer p {
     font-size: 0.8rem; }
+  footer hr {
+    width: 160px;
+    margin: 15px auto; }
 
 #professionisti {
   margin-bottom: 15px; }
 
 img {
   width: 100%; }
+
+.icone {
+  margin-left: 2px;
+  margin-top: 9px; }
+
+.insta {
+  color: orangered; }
+
+.yt {
+  color: red; }
 
 .profilo {
   width: 13%;

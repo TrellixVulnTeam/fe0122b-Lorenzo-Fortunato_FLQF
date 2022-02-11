@@ -1,12 +1,18 @@
 // partial //
 @import "function";
 @import "mixin";
+@import "mediaquery";
 
 
 
 // variabili //
 $margini: 10px;
 
+// css //
+
+.intestazione {
+    background-color: rgb(117, 250, 117);
+}
 
 main {
     @include dimensionamenti;
@@ -18,6 +24,7 @@ main {
 
     .carte {
         padding: $margini + 5px;
+        background-color: rgb(255, 194, 80);
     }
 }
 
@@ -28,11 +35,17 @@ aside {
 footer {
     @include dimensionamenti;
     text-align: center;
-    background-color: grey;
+    background-color: rgb(117, 250, 117);
 
     p{
         font-size: 0.8rem;
     }
+
+    hr {
+        width: 160px;
+        margin: 15px auto;
+    }
+
 }
 
 
@@ -43,6 +56,18 @@ footer {
 
 img {
     width: 100%;
+}
+
+.icone {
+    margin-left: 2px;
+    margin-top: 9px;
+}
+.insta{
+    color: orangered;
+}
+
+.yt {
+    color: red;
 }
 
 .profilo {
