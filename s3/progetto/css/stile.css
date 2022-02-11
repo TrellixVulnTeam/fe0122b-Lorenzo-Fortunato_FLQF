@@ -1,7 +1,3 @@
-h6 {
-  background-color: #000;
-  color: white; }
-
 @media screen and (min-width: 800px) {
   .present {
     margin-bottom: 20px; } }
@@ -13,8 +9,6 @@ h6 {
 @media screen and (min-width: 761px) {
   .cartehidden {
     display: none; }
-  .funcolore {
-    padding: 14px; }
   img {
     padding-right: 20px;
     padding-top: 10px; } }
@@ -91,3 +85,6 @@ figcaption {
   top: 85vh;
   font-size: 30px;
   color: yellow; }
+
+.funcolore {
+  padding: 14px; }
