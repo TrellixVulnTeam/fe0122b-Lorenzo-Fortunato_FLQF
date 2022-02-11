@@ -83,3 +83,11 @@ blockquote {
 figcaption {
   font-size: 0.9rem;
   margin-left: 158px; }
+
+#su {
+  text-decoration: none;
+  position: fixed;
+  right: 20px;
+  top: 85vh;
+  font-size: 30px;
+  color: yellow; }
