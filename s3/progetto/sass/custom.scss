@@ -2,8 +2,8 @@
 @import "function";
 @import "mixin";
 @import "mediaquery";
-
-
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 
 // variabili //
 $margini: 10px;
