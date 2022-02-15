@@ -36,7 +36,7 @@
 
                 <textarea name="textarea" id="area" cols="30" rows="10" placeholder="Scrivi il tuo messaggio qui"></textarea>
 
-                <input type="submit" value="Iscriviti" onclick="checked()">
+                <input type="submit" value="Iscriviti" onclick="Dati()">
             </form>
 
         </main>
@@ -58,92 +58,91 @@
             var anni = 33;
             console.log(nome);
 
-        //esempio
-            {    //block scope 
-                let anni = 1128;    
-                console.log(anni);
-                let nome = "Pippo";
+            //esempio
+                {    //block scope 
+                    let anni = 1128;    
+                    console.log(anni);
+                    let nome = "Pippo";
+                    console.log(nome);
+                }                           
+
+                // - assegnato nuovo valore ad anni e a nome, let perde di valore fuori dal block
                 console.log(nome);
-            }                           
 
-            // - assegnato nuovo valore ad anni e a nome, let perde di valore fuori dal block
-            console.log(nome);
+                const città = "Bologna";
 
-            const città = "Bologna";
+            // assegna diversi tipi di dati alle tue variabili
+                var anni2 = "4";
+                var anni3 = 5;
 
-        // assegna diversi tipi di dati alle tue variabili
-            var anni2 = "4";
-            var anni3 = 5;
+            //esempio
 
-        //esempio
+                /*alert(anni + anni2);
+                console.log(anni + anni2);*/
 
-            /*alert(anni + anni2);
-            console.log(anni + anni2);*/
+                //alert(anni + anni3);
+            
 
-            //alert(anni + anni3);
+            //utilizza un tipo booleano e concatenalo ad una stringa
+            var booleano = 2==2;  //true
+                console.log(booleano);
+
+            var booleano2 = 2==2&&3>5; 
+            console.log(booleano2);  //false
+
+            
+            //document.write(nome + " " + cognome + " " + "sostiene che 2==2 è" + " " + booleano)
+            //document.getElementById("prova").innerHTML = nome + " " + cognome + " " + "sostiene che 2==2 è" + " " + booleano; 
+            
+
+            //esegui delle somme e delle sottrazioni
+            var numeroPrimo = 5;
+            var numeroSecondo = 3;
+            var numeroTerzo = 8;
+
+            var risultatoSomma = numeroPrimo + numeroSecondo;
+            console.log(risultatoSomma);
+
+            var risultatoSottr = numeroTerzo - numeroPrimo;
+            console.log(risultatoSottr);
+            
+            var assegnazione = numeroPrimo += numeroSecondo;
+            console.log(assegnazione);
+
+            var assegnazione2 = numeroPrimo + numeroPrimo;
+            console.log(assegnazione2);
+
+
+
+            //ESERCIZIO FORM
+
+            //alert("Inserisci qui i tuoi dati e ti ricontatteremo!");
+            
+          function Dati(){
+                var pippo = document.getElementById('name').value
+                var pippo1 = document.getElementById('surname').value
+                var pippo2 = document.getElementById('email').value
+                var pippo3 = document.getElementById('psw').value
+                var pippo4 = document.getElementById('area').value
+
+
+                if(pippo == "" || pippo1 == "" || pippo2 == "" || pippo3 == "" || pippo4 == ""){
+                    alert('Compila i campi!')
+                } else {
+                    document.write('Grazie e a presto!')
+                }
+
+        }
         
-
-        //utilizza un tipo booleano e concatenalo ad una stringa
-        var booleano = 2==2;  //true
-            console.log(booleano);
-
-        var booleano2 = 2==2&&3>5; 
-        console.log(booleano2);  //false
-
         
-        //document.write(nome + " " + cognome + " " + "sostiene che 2==2 è" + " " + booleano)
-        //document.getElementById("prova").innerHTML = nome + " " + cognome + " " + "sostiene che 2==2 è" + " " + booleano; 
         
-
-        //esegui delle somme e delle sottrazioni
-        var numeroPrimo = 5;
-        var numeroSecondo = 3;
-        var numeroTerzo = 8;
-
-        var risultatoSomma = numeroPrimo + numeroSecondo;
-        console.log(risultatoSomma);
-
-        var risultatoSottr = numeroTerzo - numeroPrimo;
-        console.log(risultatoSottr);
         
-        var assegnazione = numeroPrimo += numeroSecondo;
-        console.log(assegnazione);
-
-        var assegnazione2 = numeroPrimo + numeroPrimo;
-        console.log(assegnazione2);
-
-
-
-        //ESERCIZIO FORM
-
-       alert("Inserisci qui i tuoi dati e ti ricontatteremo!");
         
-       function Dati() {
-           document.write("Grazie e a presto!")
-
-       }
-
-       function checked() {
-           if (input.value == "") {
-                alert("Completa i tuoi dati!");
-           } else {
-                document.write("Grazie e a presto!");
-           }
-
-       }
-
-        
-
-
-
-
 
 
 
 
         </script>
-
-     
-
     </body>
+
 </html>
