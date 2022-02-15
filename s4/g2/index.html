@@ -15,9 +15,30 @@
         </header>
 
         <main>   
-            <div>
+            <!-- <div>
                 <p id="prova">sono </p>
-            </div>
+            </div> -->
+
+            <form action="epicode.php" method="post">
+                <formfield>
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Nome">
+    
+                    <label for="surname">Cognome</label>
+                    <input type="text" id="surname" placeholder="Cognome">
+    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+    
+                    <label for="psw">Password</label>
+                    <input type="password" id="psw" placeholder="Password">
+                </formfield>
+
+                <textarea name="textarea" id="area" cols="30" rows="10" placeholder="Scrivi il tuo messaggio qui"></textarea>
+
+                <input type="submit" value="Iscriviti" onclick="checked()">
+            </form>
+
         </main>
 
 
@@ -70,8 +91,8 @@
         console.log(booleano2);  //false
 
         
-        document.write(nome + " " + cognome + " " + "sostiene che 2==2 è" + " " + booleano)
-        document.getElementById("prova").innerHTML = nome + " " + cognome + " " + "sostiene che 2==2 è" + " " + booleano; 
+        //document.write(nome + " " + cognome + " " + "sostiene che 2==2 è" + " " + booleano)
+        //document.getElementById("prova").innerHTML = nome + " " + cognome + " " + "sostiene che 2==2 è" + " " + booleano; 
         
 
         //esegui delle somme e delle sottrazioni
@@ -90,6 +111,35 @@
 
         var assegnazione2 = numeroPrimo + numeroPrimo;
         console.log(assegnazione2);
+
+
+
+        //ESERCIZIO FORM
+
+       alert("Inserisci qui i tuoi dati e ti ricontatteremo!");
+        
+       function Dati() {
+           document.write("Grazie e a presto!")
+
+       }
+
+       function checked() {
+           if (input.value == "") {
+                alert("Completa i tuoi dati!");
+           } else {
+                document.write("Grazie e a presto!");
+           }
+
+       }
+
+        
+
+
+
+
+
+
+
 
         </script>
 

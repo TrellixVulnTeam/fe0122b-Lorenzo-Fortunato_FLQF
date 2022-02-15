@@ -1,0 +1,31 @@
+main {
+    font-size: 1.1rem;
+}
+
+form {
+    text-align: center;
+    margin-top: 60px;
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    input {
+        display: block;
+        margin-bottom: 6px;
+        margin-right: auto;
+        margin-left: auto;
+        
+
+        &:hoover {
+            border: solid 2px #000;
+		    cursor: pointer;
+            box-shadow: 5px 5px 5px 5px #000;
+            
+        }
+
+
+    }
+
+    #area {
+        margin-top: 4px;
+    }
+}
