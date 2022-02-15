@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/stile.css">
+    </head>
+
+    <body>
+        
+        <header>
+
+        </header>
+
+        <main>   
+            <div>
+                <p id="prova">sono </p>
+            </div>
+        </main>
+
+
+
+
+
+
+
+
+
+        <script src="js/script.js"></script>
+       
+        <!-- strutture var, let, const -->
+        <script>
+            var nome = "Lorenzo";
+            var cognome = "Fortunato";
+            var anni = 33;
+            console.log(nome);
+
+        //esempio
+            {    //block scope 
+                let anni = 1128;    
+                console.log(anni);
+                let nome = "Pippo";
+                console.log(nome);
+            }                           
+
+            // - assegnato nuovo valore ad anni e a nome, let perde di valore fuori dal block
+            console.log(nome);
+
+            const città = "Bologna";
+
+        // assegna diversi tipi di dati alle tue variabili
+            var anni2 = "4";
+            var anni3 = 5;
+
+        //esempio
+
+            /*alert(anni + anni2);
+            console.log(anni + anni2);*/
+
+            //alert(anni + anni3);
+        
+
+        //utilizza un tipo booleano e concatenalo ad una stringa
+        var booleano = 2==2;  //true
+            console.log(booleano);
+
+        var booleano2 = 2==2&&3>5; 
+        console.log(booleano2);  //false
+
+        
+        document.write(nome + " " + cognome + " " + "sostiene che 2==2 è" + " " + booleano)
+        document.getElementById("prova").innerHTML = nome + " " + cognome + " " + "sostiene che 2==2 è" + " " + booleano; 
+        
+
+        //esegui delle somme e delle sottrazioni
+        var numeroPrimo = 5;
+        var numeroSecondo = 3;
+        var numeroTerzo = 8;
+
+        var risultatoSomma = numeroPrimo + numeroSecondo;
+        console.log(risultatoSomma);
+
+        var risultatoSottr = numeroTerzo - numeroPrimo;
+        console.log(risultatoSottr);
+        
+        var assegnazione = numeroPrimo += numeroSecondo;
+        console.log(assegnazione);
+
+        var assegnazione2 = numeroPrimo + numeroPrimo;
+        console.log(assegnazione2);
+
+        </script>
+
+     
+
+    </body>
+</html>
