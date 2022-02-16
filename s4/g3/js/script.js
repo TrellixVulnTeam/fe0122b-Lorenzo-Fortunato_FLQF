@@ -38,7 +38,7 @@ function calcolo(){
 alert(freccia());*/
 
 
-/*freccia = () => {return "Ciaone!!!"}
+freccia = () => {return "Ciaone!!!"}
 //alert(freccia());
 
 
@@ -99,5 +99,5 @@ console.log(5<7); //true
 var qui = 5;
 var quo = 7;
 
-console.log(5>7); //false*/
+console.log(5>7); //false
 
