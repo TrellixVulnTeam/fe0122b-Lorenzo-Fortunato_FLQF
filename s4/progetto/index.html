@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ma che bella calcolatrice!">
+    <title>Calcolatrice bellissima</title>
+    <link rel="stylesheet" href="css/stile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <h1>Calcola come se non ci fosse un domani!</h1>
+
+    
+    
+    <div id="calcolatrice">
+        
+        <!-- display -->
+        <input type="text" id="display" placeholder="0">
+        
+        <!-- tastierino -->
+        <div id="tastierino">
+            <div>
+                <div id="7" class="tasti" onclick="valoreNum(this)">7</div>
+                <div id="8" class="tasti" onclick="valoreNum(this)">8</div>
+                <div id="9" class="tasti" onclick="valoreNum(this)">9</div>
+                <div id="*" class="tasti" onclick="valoreNum(this)">X</div>
+            </div>
+            <div>
+                <div id="4" class="tasti" onclick="valoreNum(this)">4</div>
+                <div id="5" class="tasti" onclick="valoreNum(this)">5</div>
+                <div id="6" class="tasti" onclick="valoreNum(this)">6</div>
+                <div id="-" class="tasti" onclick="valoreNum(this)">-</div>
+            </div>
+            <div>
+                <div id="1" class="tasti" onclick="valoreNum(this)">1</div>
+                <div id="2" class="tasti" onclick="valoreNum(this)">2</div>
+                <div id="3" class="tasti" onclick="valoreNum(this)">3</div>
+                <div id="+" class="tasti" onclick="valoreNum(this)">+</div>
+            </div>
+            
+            <div>
+                <div id="0" class="tasti" onclick="valoreNum(this)">0</div>
+                <div id="." class="tasti" onclick="valoreNum(this)">.</div>
+                <div id="C" class="tasti" onclick="cancella()">C</div>
+                <div id="/" class="tasti" onclick="valoreNum(this)">/</div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            <div id="uguale" class="tasti" onclick="calcola()">=</div>
+
+
+
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
