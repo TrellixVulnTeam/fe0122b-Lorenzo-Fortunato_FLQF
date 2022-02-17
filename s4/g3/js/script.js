@@ -6,19 +6,24 @@ function calcolo(){
     
     document.getElementById('mancanti').value= pippo - topolino;
 
+    colore(pippo-topolino);
     
 }
 
 //esercizio mio sul cambio di colore del div
-(function (){
-    var pluto = document.getElementById('mancanti').value;
+    function colore(pluto){
+    
 
     if (pluto > 20) {
         document.getElementById('tornasole').style.backgroundColor = "green";
     } else {
         document.getElementById('tornasole').style.backgroundColor = "red";
     }
-}) ();
+
+    
+}
+
+
 
 
 
