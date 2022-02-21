@@ -58,9 +58,9 @@ console.log(persone);
 function somma(){
     var numerelli = ['1','2','3','411','5','6']
 
-
-    document.write('numerelli 0 + numerelli 3');
-    console.log(somma);
+    numerelli[1] + numerelli[3]
+    //document.write('numerelli 0 + numerelli 3');
+    //console.log(somma);
 
 }
 

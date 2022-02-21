@@ -1,9 +1,9 @@
 //prendi i valori dei tasti e mettili sul display
 function valoreNum(pippo){
-    let display = document.getElementById('display')
-    let numero = pippo.id
+    let display = document.getElementById('display');
+    let numero = pippo.id;
 
-        display.value  += numero     
+        display.value  += numero;     
 
 
 
