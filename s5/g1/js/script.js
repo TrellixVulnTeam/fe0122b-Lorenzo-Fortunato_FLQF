@@ -40,6 +40,7 @@ function timer(){
     let orario = new Date();
     
     
+    
     document.getElementById('orologio').innerHTML = orario;
 
 
