@@ -3,7 +3,7 @@ var budgetIniziale = 1000;
 document.getElementById('bdg').innerHTML = 'budget' + ' ' + budgetIniziale;
 //spese random
 function randomico(){
-    return Math.floor(Math.random() * 10);
+    return Math.floor(Math.random() * 100);
 
 }
 
