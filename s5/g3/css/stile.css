@@ -1,0 +1,33 @@
+/* menu a tendina */
+#menu {
+    background-color: cadetblue;
+    color: white;
+    width: 100px;
+    height: 70px;
+    border: none;
+    font-size: 1.3rem;
+}
+
+#navigazione {
+    background-color: blueviolet;
+    font-size: 1.3rem;
+    border: none;
+    width: 100px;
+    padding: 10px;
+    line-height: 2.3rem;
+    visibility: hidden;
+}
+
+.tastiMenu:hover {
+    background-color: violet;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#testo {
+    text-align: center;
+}
