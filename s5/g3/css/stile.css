@@ -16,6 +16,7 @@
     padding: 10px;
     line-height: 2.3rem;
     visibility: hidden;
+    
 }
 
 .tastiMenu:hover {
@@ -30,4 +31,6 @@ a {
 
 #testo {
     text-align: center;
+    font-size: 2rem;
+    
 }
