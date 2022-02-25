@@ -1,0 +1,21 @@
+#add_btn {
+    background-color: orange;
+    color: #000;
+    font-weight: bold;
+
+}
+
+body {
+    background-color: rgb(158, 158, 158);
+}
+
+input {
+    background-color: grey;
+    border-color: #000;
+    
+}
+
+#tasks_list_html {
+    font-weight: bold;
+    list-style-type: square;
+}
