@@ -69,4 +69,30 @@ function storagecancel(testo){
     };
     
     
-    // 6. ricostruire la lista 
+// 6. ricostruire la lista 
+
+function creaHtml(){
+    let salvati = localStorage.getItem('lista');
+    let save = salvati == null ? [] : JSON.parse(salvati);
+
+    let valore = document.querySelector('#task_txt').value;
+    save.forEach(function(valore){
+        let elemento = document.createElement('li');
+        //console.log(elemento)
+        //console.log(valore)
+        elemento.innerText = valore;
+        //console.log(elemento.innerText)
+        document.querySelector("#tasks_list_html").append(elemento);
+
+
+        elemento.addEventListener('click', function(){
+            elemento.remove();
+            
+            storagecancel(elemento);
+        })
+    })
+        
+
+
+}
+creaHtml();
