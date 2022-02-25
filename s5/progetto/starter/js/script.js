@@ -20,6 +20,7 @@ bottone.addEventListener('click', function(){
     let lista = document.querySelector('#tasks_list_html');
     let li = lista.append(elemento)
 
+    salva(valore);
     // 3.3 clear campo
     document.querySelector('#task_txt').value = "";
 
@@ -28,18 +29,44 @@ bottone.addEventListener('click', function(){
     elemento.addEventListener('click', function(){
         elemento.remove();
         
+        storagecancel(elemento);
     })
 
 
 
-    salva();
+   
 })
 
 
 // 5. salvataggio al reload
+function salva(testo){
+    let valore = document.querySelector('#task_txt').value;
+    //console.log(valore)
 
+    let salvati = localStorage.getItem('lista');
+    let save = salvati == null ? [] : JSON.parse(salvati)
+    save.push(testo)
+    
+    
+    localStorage.setItem('lista', JSON.stringify(save))
+    
+    
+}
 
+// 5.1 elimina dallo storage al click
 
-
-
-// 6. ricostruire la lista 
+function storagecancel(testo){
+       
+        let salvati = localStorage.getItem('lista');
+        let save = salvati == null ? [] : JSON.parse(salvati)
+        
+        let indice = save.indexOf(testo)
+        console.log(indice)
+        
+        save.splice(indice,1)
+        
+        localStorage.setItem('lista', JSON.stringify(save))
+    };
+    
+    
+    // 6. ricostruire la lista 
