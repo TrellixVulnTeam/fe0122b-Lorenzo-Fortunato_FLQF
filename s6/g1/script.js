@@ -1,16 +1,13 @@
-// Quando il documento è pronto...
 $(document).ready( () => {
-
-
     $('#iscr-news').click( () => {
-        
         let check = $('#nome').val();
+
         if (check == ""){
             $("#nome").next().text('* richiesto');
         }else{
             $("#nome").next().text('bravo');
         }
-    
+
         let email1 = $('#email-1').val();
         if (email1 == ""){
             $("#email-1").next().text('* richiesto');
@@ -28,17 +25,14 @@ $(document).ready( () => {
         if (email1 != email2){
             alert('Email diverse!');
         }else if(check != '' && email1 != '' && email2 != ''){
-            alert('Ti sei iscritto!');
+            alert('Sei uno sbruffone');
             
         }
-
-        
-        
-    })
+    });
     
     $('#pulisci-form').click( () => {
         $('#nome, #email-1, #email-2').val('');
-    })
+    });
     
 
 
@@ -63,4 +57,3 @@ $(document).ready( () => {
         
 
 
-    //posizionare un asterisco per identificare il campo obbligatorio. 
