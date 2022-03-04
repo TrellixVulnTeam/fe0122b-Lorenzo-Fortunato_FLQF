@@ -14,15 +14,20 @@ $( () =>{
         // console.log(elemento)
     }   
         
+        
         let serbatoio = [];
+        //console.log(serbatoio);
         $('.images').click(function(){
-            
+            // ANIMAZIONE
+            $(this).addClass('animazione')
+
             // CONTATORE
             let conteggio = $('#clicks').text();
             conteggio++;
             $('#clicks').text(conteggio)
             
             
+
             if(serbatoio.length < 2){
                 $(this).children().show();
                 let imgId = $(this).children().attr('id');
@@ -37,7 +42,13 @@ $( () =>{
                 if(serbatoio.length == 2){
                     if(serbatoio[0].src == serbatoio[1].src){
                         serbatoio = [];
+
+
+
                         
+
+                       
+
                     }else{
                         setTimeout(function(){
                             $('#' + serbatoio[0].id).hide();
@@ -51,7 +62,9 @@ $( () =>{
                 
                 
                 
-            }
+            };
+
+
             
             
             
