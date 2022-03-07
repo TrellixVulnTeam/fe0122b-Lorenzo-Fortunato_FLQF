@@ -1,15 +1,15 @@
 #popup {
     width: 300px;
     height: 100px;
-    background-color: rgb(102, 101, 101);
+    background-color: rgb(150, 150, 150);
     text-align: center;
-    display: none;
     border-right: 4px;
     margin: auto;
     color: white;
     border-radius: 4px;
     margin-top: 40px;
     padding: 10px;
+   
 }
 
 #chiudi {
@@ -18,3 +18,11 @@
     
 }
 
+#layer {
+    display: none;
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}

@@ -25,7 +25,19 @@ bottoneInvia.addEventListener('click', function(e){
     
 
     let forM = document.querySelector('#registrazione');
+    let popup = document.querySelector('#popup');
+    let layer = document.querySelector('#layer');
     if(x > 0 ){
+        layer.style.display = 'block';
+    }
+
+    let chiudi = document.querySelector('#chiudi');
+    chiudi.addEventListener('click', () => {
+        layer.style.display = 'none';
+    });
+
+
+    /*if(x > 0 ){
         let popup = document.querySelector('#popup');
         popup.style.display = 'block';
         popup.style.zIndex = '100';
@@ -38,7 +50,7 @@ bottoneInvia.addEventListener('click', function(e){
     chiudi.addEventListener('click', () => {
         popup.style.display = 'none';
         forM.style.display = 'block';
-    })
+    })*/
 
   
 
@@ -78,4 +90,4 @@ bottoneInvia.addEventListener('click', function(e){
         // 2.2 al click crea un oggetto composto dai value degli input (OOP)
         // 2.3 pushare gli oggetti nell'array cestino
     
-
+// extras: lettere e simboli ammessi negli input
