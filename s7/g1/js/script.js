@@ -24,8 +24,7 @@ bottoneInvia.addEventListener('click', function(e){
     });
     
 
-    let forM = document.querySelector('#registrazione');
-    let popup = document.querySelector('#popup');
+    
     let layer = document.querySelector('#layer');
     if(x > 0 ){
         layer.style.display = 'block';
