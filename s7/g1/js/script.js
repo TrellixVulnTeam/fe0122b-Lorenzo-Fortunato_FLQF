@@ -3,7 +3,7 @@ let bottoneInvia = document.querySelector('.bottone');
 bottoneInvia.addEventListener('click', function(e){
     e.preventDefault();
     var arrayy = document.querySelectorAll('.val')
-    x = 0
+
     arrayy.forEach(elemento =>{
         let valore = elemento.value;
         if(valore == ""){
@@ -16,27 +16,40 @@ bottoneInvia.addEventListener('click', function(e){
         }else{
             elemento.style.border = '';
             
-            
         }
         
-        
-        
-        
+
     });
 
-    // VARIABILE DI CONTROLLO DA SISTEMARE!!!!!!!
-
+    
+    let nome = document.querySelector('#nome').value;
+    let cognome = document.querySelector('#cognome').value;
+    let user = document.querySelector('#user').value;
+    let email = document.querySelector('#email').value;
+    let password1 = document.querySelector('#psw1').value;
+    let password2 = document.querySelector('#psw2').value;
     
     let layer = document.querySelector('#layer');
-    if(x > 0 ){
+    if(nome != "" && cognome != "" && email != "" && password1 != "" && password2 != "" && password1 == password2){
         layer.style.display = 'block';
         salva();
-        
+        let nome = document.querySelector('#nome').value = "";
+        let cognome = document.querySelector('#cognome').value = "";
+        let user = document.querySelector('#user').value = "";
+        let email = document.querySelector('#email').value = "";
+        let password1 = document.querySelector('#psw1').value = "";
+        let password2 = document.querySelector('#psw2').value = "";
+    }
+
+    if(password1 != password2){
+        password1.style.border = '1px solid red';
+        password2.style.border = '1px solid red';
     }
 
     let chiudi = document.querySelector('#chiudi');
     chiudi.addEventListener('click', () => {
         layer.style.display = 'none';
+
     });
 
     
@@ -58,9 +71,6 @@ bottoneInvia.addEventListener('click', function(e){
     })*/
 
   
-
-    
-// creo un oggetto dagli input
     function salva(){
         class Utente {
             constructor (nome, cognome, user, email, password1, password2){
@@ -73,12 +83,7 @@ bottoneInvia.addEventListener('click', function(e){
             };
         };
 
-        let nome = document.querySelector('#nome').value;
-        let cognome = document.querySelector('#cognome').value;
-        let user = document.querySelector('#user').value;
-        let email = document.querySelector('#email').value;
-        let password1 = document.querySelector('#psw1').value;
-        let password2 = document.querySelector('#psw2').value;
+        
 
         const persona = new Utente(nome, cognome, user, password1, password2);
      
