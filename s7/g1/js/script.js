@@ -26,11 +26,13 @@ bottone.addEventListener('click', function(e) {
     };
     if(nome != "" && cognome != "" && user != "" && email != "" && password1.value == password2.value){
         layer.style.display = 'block';
-        const persona = new Utente(nome, cognome, user, password1.value, password2.value);
+        const persona = new Utente(nome, cognome, user, email, password1.value, password2.value);
         salva(persona);
     };
 
 
+    
+    
 });
 
 let chiudi = document.querySelector('#chiudi');
@@ -40,6 +42,17 @@ chiudi.addEventListener('click', () => {
         elemento1.value = "";
     })
 });
+
+
+
+
+
+
+
+
+
+
+
 
 // classe utente
 class Utente {
@@ -56,11 +69,15 @@ class Utente {
 function salva(pippo){
     let list = localStorage.getItem('lista');
     let tern = list == null ? [] : JSON.parse(list);
-    tern.push(pippo);
-    let json = JSON.stringify(tern);
-    localStorage.setItem('lista', json);
+    let found = tern.find(oldUser => oldUser.email == pippo.email);
+    if(found == undefined){
+        tern.push(pippo);
+        let json = JSON.stringify(tern);
+        localStorage.setItem('lista', json);
+    }else{
+        alert('sei uno stronzo')
+    }
 
-    
 };
 
 
