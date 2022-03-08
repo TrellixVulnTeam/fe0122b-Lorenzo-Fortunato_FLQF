@@ -8,11 +8,13 @@ bottone.addEventListener('click', function(e) {
     let cognome = document.querySelector('#cognome').value;
     let user = document.querySelector('#user').value;
     let email = document.querySelector('#email').value;
+    let controllo = true;
     
         input.forEach(elemento => {
             let inputValue = elemento.value;
             if (inputValue == ""){
                 elemento.style.border = "1px solid red";
+                controllo = false;
             }else{
                 elemento.style.border = "";
             }
@@ -23,17 +25,20 @@ bottone.addEventListener('click', function(e) {
     if(password1.value != password2.value){
         password1.style.border = "1px solid orange";
         password2.style.border = "1px solid orange";
+        controllo = false;
     };
     if(nome != "" && cognome != "" && user != "" && email != "" && password1.value == password2.value){
         layer.style.display = 'block';
         const persona = new Utente(nome, cognome, user, email, password1.value, password2.value);
         salva(persona);
+        controllo = false;
     };
-
+    
 
     
     
 });
+
 
 let chiudi = document.querySelector('#chiudi');
 chiudi.addEventListener('click', () => {
@@ -75,7 +80,8 @@ function salva(pippo){
         let json = JSON.stringify(tern);
         localStorage.setItem('lista', json);
     }else{
-        alert('sei uno stronzo')
+        alert('sei uno stronzo');
+        layer.style.display = 'none';
     }
 
 };
