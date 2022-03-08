@@ -15,25 +15,31 @@ bottoneInvia.addEventListener('click', function(e){
             psw2.style.border = '1px solid red';
         }else{
             elemento.style.border = '';
-            x++;
+            
+            
         }
         
         
         
         
     });
-    
+
+    // VARIABILE DI CONTROLLO DA SISTEMARE!!!!!!!
 
     
     let layer = document.querySelector('#layer');
     if(x > 0 ){
         layer.style.display = 'block';
+        salva();
+        
     }
 
     let chiudi = document.querySelector('#chiudi');
     chiudi.addEventListener('click', () => {
         layer.style.display = 'none';
     });
+
+    
 
 
     /*if(x > 0 ){
@@ -54,10 +60,40 @@ bottoneInvia.addEventListener('click', function(e){
   
 
     
+// creo un oggetto dagli input
+    function salva(){
+        class Utente {
+            constructor (nome, cognome, user, email, password1, password2){
+                this.nome = nome;
+                this.cognome = cognome;
+                this.user = user;
+                this.email = email;
+                this.password1 = password1;
+                this.password2 = password2;
+            };
+        };
 
+        let nome = document.querySelector('#nome').value;
+        let cognome = document.querySelector('#cognome').value;
+        let user = document.querySelector('#user').value;
+        let email = document.querySelector('#email').value;
+        let password1 = document.querySelector('#psw1').value;
+        let password2 = document.querySelector('#psw2').value;
 
+        const persona = new Utente(nome, cognome, user, password1, password2);
+     
+        let list = localStorage.getItem('persona');
+        
+        let tern = list == null ? [] : JSON.parse(list);
+        tern.push(persona);
 
+        let json = JSON.stringify(tern);
+        localStorage.setItem('persona', json);
 
+        
+    };
+    
+    
 
 
 
@@ -85,8 +121,9 @@ bottoneInvia.addEventListener('click', function(e){
         // 1.3 tutti i campi sono necessari
 
     // 2. al click localStorage
-        // 2.1 creare array cestino
-        // 2.2 al click crea un oggetto composto dai value degli input (OOP)
+        // 2.1 al click crea un oggetto composto dai value degli input (OOP)
+        // 2.2 creare array cestino
+        // !!!! non creare utenti vuoti! !!!!!!
         // 2.3 pushare gli oggetti nell'array cestino
     
 // extras: lettere e simboli ammessi negli input
