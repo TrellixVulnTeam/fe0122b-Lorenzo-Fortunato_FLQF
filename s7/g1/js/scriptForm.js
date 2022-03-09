@@ -32,6 +32,8 @@ bottone.addEventListener('click', function(e) {
         const persona = new Utente(nome, cognome, user, email, password1.value, password2.value);
         salva(persona);
         controllo = false;
+
+       
     };
     
 
@@ -45,18 +47,10 @@ chiudi.addEventListener('click', () => {
     layer.style.display = 'none';
     input.forEach(elemento1 => {
         elemento1.value = "";
-    })
+    });
+    window.location = 'login.html';
+
 });
-
-
-
-
-
-
-
-
-
-
 
 
 // classe utente
@@ -87,23 +81,6 @@ function salva(pippo){
 };
 
 
-
-
-
-
-
-// NON CI SI PUò ISCRIVERE DUE VOLTE CON LA STESSA EMAIL!!!
-
-//////// LOG-IN ///////////
-
-
-
-
-
-
-
-
-
 // FORM
     // 1. required e annessi --> OK
         // 1.1 campi required --> OK 
@@ -117,11 +94,3 @@ function salva(pippo){
         // 2.3 pushare gli oggetti nell'array cestino --> OK
     
 // extras: lettere e simboli ammessi negli input
-
-
-// LOG-IN
-    // 1. inserimento dati 
-        // 1.1 i campi non devono essere lasciati vuoti
-        // 1.2 crea un oggetto per ogni inserimento
-        // 1.3 compara l'oggetto log-in con l'oggetto form
-     
