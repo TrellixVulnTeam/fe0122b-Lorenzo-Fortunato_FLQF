@@ -1,76 +1,53 @@
 // PAGINA TABELLE
 let intestazione = ['Nome', 'Cognome', 'User', 'Email', 'Password1', 'Password2', 'Elimina'];
 let tbl = document.querySelector('#tab');
-intestazione.forEach(elemento => {
+intestazione.forEach(elemento1 => {
     let tableHead = document.createElement('th');
     tbl.append(tableHead);
-    tableHead.innerText = elemento;
+    tableHead.innerText = elemento1;
 });
 
 var tableRow;
 let list = localStorage.getItem('lista');
 let tern = list == null ? [] : JSON.parse(list);
-// console.log(tern)
 tern.forEach(elemento => {
     tableRow = document.createElement('tr');
     tbl.append(tableRow);
-    tableRow.classList.add('riga');
+    tableRow.classList.add('riga');               // da eliminare??
+
     for(prop in elemento){
         let tableData = document.createElement('td');
         tableRow.append(tableData);
         tableData.innerText = elemento[prop];
         // console.table(elemento[prop]);
     };
-
-});
-
-let righeUtenti = document.querySelectorAll('.riga');
-righeUtenti.forEach(elemento => {
-    let dataDelete = document.createElement('button');
-    elemento.append(dataDelete);
+    
+    var dataDelete = document.createElement('button');
+    tableRow.append(dataDelete);
     dataDelete.innerText = 'Elimina';
-    dataDelete.classList.add('delete');
+    dataDelete.classList.add('delete');               // da eliminare??
 
+    dataDelete.addEventListener('click', function(){
+        eliminaUtente();
+        tableRow.remove();
+    
+        
+        
+        
+    });
 });
 
-let cancella = document.querySelectorAll('.delete');
-cancella.forEach(elemento => {
-    elemento.addEventListener('click', () => {
-        tableRow.remove();
-        
+function eliminaUtente(elemento){
+    var indice = tern.indexOf(elemento);
+    console.log(indice);
+    tern.splice(indice, 1);
+    localStorage.setItem('lista', JSON.stringify(tern));
     
-    
-    });
+
+};
 
 
 
-})
+/////////////////// INDEXOF SEMPRE UGUALE A -1!!!! PERCHè?????
 
 
-
-
-
-
-
-
-/*for(i = 0; i < 6; i++){
-        let tableData = document.createElement('td')
-        tableRow.append(tableData);
-    };*/
-
-
-/*for(i = 0; i < 6; i++){
-    let tableData = document.createElement('td')
-    tableHead.append(tableData);
-    
-};*/
-
-
-
-
-/*for(i = 0; i < tern.length; i++){
-    // console.log('ok')
-    for(prop in tern[i]){
-        console.log(prop, tern[i][prop])
-    }
-};*/
