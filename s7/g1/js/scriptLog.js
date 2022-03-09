@@ -18,16 +18,7 @@ btnLog.addEventListener('click', function(ee) {
     const personaLog  = new UtenteLog(userLog, emailLog, passwordLog);
     // console.log(personaLog);
 
-
-
-    
-
     recupera(personaLog);
-
-
-
-
-
 
 });
 
@@ -40,34 +31,19 @@ class UtenteLog {
     };
 };
 
-
 function recupera(pippoLog){
     let list = localStorage.getItem('lista');
     let tern = list == null ? [] : JSON.parse(list);
-    let checkEmail = tern.find(oldUser => oldUser.email == pippoLog.emailLog);
-    console.log(checkEmail)
+    let check = tern.find(oldUser => oldUser.email == pippoLog.emailLog && oldUser.password1 == pippoLog.passwordLog);
+    // console.log(check);
+    if(check != undefined){
+        alert('Login riuscito!');
+        window.location = 'iscritti.html';
+    }else{
+        alert('Campi errati! Ricompilali!');
+    };
 
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -78,4 +54,23 @@ function recupera(pippoLog){
         // 1.3 compara l'oggetto log-in con l'oggetto form
         // 1.4 collega a pagina tabelle
 
-// PAGINA TABELLE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
