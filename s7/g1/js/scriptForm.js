@@ -93,4 +93,4 @@ function salva(pippo){
         // !!!! non creare utenti vuoti! !!!!!! --> OK
         // 2.3 pushare gli oggetti nell'array cestino --> OK
     
-// extras: lettere e simboli ammessi negli input
+// extras: lettere e simboli ammessi negli input + blocco se user già utilizzato

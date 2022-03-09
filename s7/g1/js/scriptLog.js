@@ -47,6 +47,9 @@ function recupera(pippoLog){
 
 
 
+
+
+
 // LOG-IN
     // 1. inserimento dati 
         // 1.1 i campi non devono essere lasciati vuoti
