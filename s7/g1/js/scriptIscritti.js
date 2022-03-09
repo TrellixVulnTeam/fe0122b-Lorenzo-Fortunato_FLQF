@@ -7,25 +7,44 @@ intestazione.forEach(elemento => {
     tableHead.innerText = elemento;
 });
 
+var tableRow;
 let list = localStorage.getItem('lista');
 let tern = list == null ? [] : JSON.parse(list);
 // console.log(tern)
 tern.forEach(elemento => {
-    let tableRow = document.createElement('tr');
+    tableRow = document.createElement('tr');
     tbl.append(tableRow);
+    tableRow.classList.add('riga');
     for(prop in elemento){
         let tableData = document.createElement('td');
         tableRow.append(tableData);
         tableData.innerText = elemento[prop];
-        console.table(elemento[prop]);
+        // console.table(elemento[prop]);
     };
 
 });
 
-for(i = 0; i < 2; i++){
-    let tableData = document.createElement('td');
-    tableRow.append(tableData);
-}
+let righeUtenti = document.querySelectorAll('.riga');
+righeUtenti.forEach(elemento => {
+    let dataDelete = document.createElement('button');
+    elemento.append(dataDelete);
+    dataDelete.innerText = 'Elimina';
+    dataDelete.classList.add('delete');
+
+});
+
+let cancella = document.querySelectorAll('.delete');
+cancella.forEach(elemento => {
+    elemento.addEventListener('click', () => {
+        tableRow.remove();
+        
+    
+    
+    });
+
+
+
+})
 
 
 
