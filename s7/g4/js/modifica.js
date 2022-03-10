@@ -23,7 +23,7 @@ bottone.addEventListener('click', () => {
     )
     .then(response => response.json())
     .then(data => {
-        alert('Utente '+data.id+' Creato')
+        alert('Utente '+data.id+' Aggiornato')
     });
 
     

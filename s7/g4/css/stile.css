@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(49, 49, 49);
+}
+main{
+    padding-left: 150px;
+    padding-right: 150px;
+    font-family: 'Open Sans', sans-serif;
+}
+#container{
+    margin: auto;
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 2px 2px 2px 0px grey;
+
+}
+#tab {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.int {
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.riga {
+    border-top: 2px solid;
+    font-size: 1.1rem; 
+}
+
+.data {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 10px;
+}
+
+.change {
+    background-color: yellow;
+    border: none;
+    box-shadow: 2px 2px 2px 0px grey;
+    margin: 5px;
+    height: 25px;
+    width: 70px;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+.canc {
+    background-color: yellow;
+    border: none;
+    box-shadow: 2px 2px 2px 0px grey;
+    margin: 0px 5px;
+    height: 25px;
+    width: 70px;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+.change:hover{
+    background-color: rgb(224, 224, 0);
+    cursor: pointer;
+}
+
+.change:active{
+    background-color: rgb(252, 252, 55);
+    transform: translateY(2px);
+}
+
+.canc:hover{
+    background-color: rgb(252, 46, 46);
+    cursor: pointer;
+    color: white;
+}
+
+.canc:active{
+    background-color: rgb(228, 0, 0);
+    transform: translateY(2px);
+}
