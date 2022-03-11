@@ -7,9 +7,13 @@ fetch('https://sofin.wp-admin.it/public/api/v1/user' )
     var campi = data;
     
     var utente = campi.find(u => u.id == id);
+
+    // document.querySelector('#nome') = utente.nome
     
     let bottone = document.querySelector('.bottone');
-        bottone.addEventListener('click', () => {
+        bottone.addEventListener('click', function(e){
+            e.preventDefault();
+            
             let nome = document.querySelector('#nome').value;
             let cognome = document.querySelector('#cognome').value;
             let email = document.querySelector('#email').value;
