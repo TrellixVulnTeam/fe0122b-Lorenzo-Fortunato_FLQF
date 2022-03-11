@@ -62,16 +62,8 @@ fetch('https://sofin.wp-admin.it/public/api/v1/user')
                     alert('Utente eliminato!'))
                   
             
-            
-            
-            
             })
         });
-
-
-
-
-
 
 
         let change = document.querySelectorAll('.change');
