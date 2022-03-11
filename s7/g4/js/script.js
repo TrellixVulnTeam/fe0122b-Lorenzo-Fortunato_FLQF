@@ -32,20 +32,47 @@ fetch('https://sofin.wp-admin.it/public/api/v1/user')
     
             };
 
-            
             let dataModify = document.createElement('td');
             tableRow.append(dataModify);
             let modify = document.createElement('button');
             dataModify.append(modify);
             modify.innerText = 'Modifica';
             modify.classList.add('change');
+
+            // qui creo tasto elimina
             let dataDelete = document.createElement('td');
             tableRow.append(dataDelete);
             let canc = document.createElement('button');
             dataDelete.append(canc);
             canc.innerText = 'Elimina';
             canc.classList.add('canc');
+            canc.setAttribute('data-id', elemento.id) //attributo
+
+            canc.addEventListener('click', function() {
+                var dataId = this.getAttribute('data-id');
+                console.log(dataId)
+                // deleta(dataId);
+                tableRow.remove();
+
+                fetch('https://sofin.wp-admin.it/public/api/v1/user/id=' + `${dataId}`, {
+                    method: 'DELETE',
+                  })
+                  .then(response => response.text()) 
+                  .then(data => 
+                    alert('Utente eliminato!'))
+                  
+            
+            
+            
+            
+            })
         });
+
+
+
+
+
+
 
         let change = document.querySelectorAll('.change');
         change.forEach(elemento => {
@@ -59,8 +86,19 @@ fetch('https://sofin.wp-admin.it/public/api/v1/user')
 
 
     });
-        
 
+
+/*function deleta(){
+
+    fetch('https://sofin.wp-admin.it/public/api/v1/user' + dataId, {
+  method: 'DELETE',
+})
+.then(res => res.text()) // or res.json()
+.then(res => console.log(res))
+
+
+
+}*/
 
 
 

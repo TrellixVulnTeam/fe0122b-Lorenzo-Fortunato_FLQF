@@ -82,3 +82,41 @@ main{
     background-color: rgb(228, 0, 0);
     transform: translateY(2px);
 }
+
+#crea {
+    background-color: rgb(42, 255, 42);
+    border: none;
+    box-shadow: 2px 2px 2px 0px grey;
+    margin: 0px 5px;
+    height: 25px;
+    width: 70px;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    margin-left: 806px;
+}
+
+#crea:hover{
+    background-color: rgb(0, 214, 0);
+    cursor: pointer;
+    color: white;
+}
+
+#crea:active{
+    background-color: rgb(40, 206, 40);
+    transform: translateY(2px);
+}
+
+
+
+
+
+
+/* pagina modifica */
+label {
+    color: white;
+}
+
+.bottone {
+    color: white;
+}
