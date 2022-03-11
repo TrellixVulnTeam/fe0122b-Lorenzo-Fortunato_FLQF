@@ -48,6 +48,9 @@ main{
     border-radius: 4px;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
+    text-decoration: none;
+    color: black;
+    padding: 3px 6px;
 }
 
 .canc {
@@ -69,7 +72,7 @@ main{
 
 .change:active{
     background-color: rgb(252, 252, 55);
-    transform: translateY(2px);
+    transform: translateY(2px); /* non funziona perchè è un <a> e non un di mi scocciava sistemarlo da js*/
 }
 
 .canc:hover{
@@ -109,9 +112,6 @@ main{
 
 
 
-
-
-
 /* pagina modifica */
 label {
     color: white;
@@ -119,4 +119,14 @@ label {
 
 .bottone {
     color: white;
+}
+
+/* pagina create */
+#create {
+    background-color: rgb(104, 255, 104);
+    
+}
+
+.creaLabel {
+    color:black;
 }

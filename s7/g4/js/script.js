@@ -34,10 +34,11 @@ fetch('https://sofin.wp-admin.it/public/api/v1/user')
 
             let dataModify = document.createElement('td');
             tableRow.append(dataModify);
-            let modify = document.createElement('button');
+            let modify = document.createElement('a');
             dataModify.append(modify);
             modify.innerText = 'Modifica';
             modify.classList.add('change');
+            modify.href = '/modifica.html?id=' + elemento.id;
 
             // qui creo tasto elimina
             let dataDelete = document.createElement('td');
@@ -46,23 +47,19 @@ fetch('https://sofin.wp-admin.it/public/api/v1/user')
             dataDelete.append(canc);
             canc.innerText = 'Elimina';
             canc.classList.add('canc');
-            canc.setAttribute('data-id', elemento.id) //attributo
 
             canc.addEventListener('click', function() {
-                var dataId = this.getAttribute('data-id');
-                console.log(dataId)
-                // deleta(dataId);
-                tableRow.remove();
-
-                fetch('https://sofin.wp-admin.it/public/api/v1/user/id=' + `${dataId}`, {
+                fetch('https://sofin.wp-admin.it/public/api/v1/user/' + elemento.id, {
                     method: 'DELETE',
                   })
                   .then(response => response.text()) 
-                  .then(data => 
-                    alert('Utente eliminato!'))
+                  .then(data => {
+                    alert('Utente eliminato!')
+                    tableRow.remove()
+                });
                   
             
-            })
+            });
         });
 
 
@@ -76,10 +73,17 @@ fetch('https://sofin.wp-admin.it/public/api/v1/user')
 
         });
 
+        let create = document.querySelector('#crea');
+        create.addEventListener('click', () => {
+            window.location = 'create.html';
+
+        });
+
 
     });
 
 
+    
 /*function deleta(){
 
     fetch('https://sofin.wp-admin.it/public/api/v1/user' + dataId, {
