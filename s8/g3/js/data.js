@@ -153,4 +153,5 @@ dipendenti.forEach(function (elemento) {
         // console.log(proprieta.innerText)
         generalita.append(proprieta);
     }
+    ////////////// PERCHè MI STAMPA QUELLO CHE GLI PARE?!?!
 });
