@@ -32,28 +32,41 @@ fetch('Abbigliamento.json')
     data.forEach(function (e) {
         var capoDiAbbigliamento = new Vestiti(e.id, e.codprod, e.collezione, e.capo, e.modello, e.quantita, e.colore, e.prezzoivaesclusa, e.prezzoivainclusa, e.disponibile, e.saldo);
         console.log(capoDiAbbigliamento);
-        /*let capo: string = e.capo;
-        let opt: Element = document.createElement('option');
+        var capo = e.capo;
+        var opt = document.createElement('option');
+        opt.setAttribute('value', e.id);
         opt.innerHTML = capo;
-        sel.append(opt)
-
-        for (let prop in e){
-            if(prop == 'id' || prop == 'codprod' || prop == 'modello'){
+        sel.append(opt);
+        var div = document.createElement('div');
+        var main = document.querySelector('main');
+        div.setAttribute('id', e.id);
+        div.classList.add('prova');
+        div.classList.add('hide');
+        main.append(div);
+        for (var prop in e) {
+            if (prop == 'id' || prop == 'codprod' || prop == 'modello') {
                 continue;
-            }else{
-                let cartellino: any = document.querySelector('#specifiche');
-                let spec: any = document.createElement('p');
+            }
+            else {
+                var cartellino = document.querySelector('#specifiche');
+                var spec = document.createElement('p');
                 spec.innerText = e[prop];
-                cartellino.append(spec)
-
-
-            };
-            
-        }*/
+                div.append(spec);
+            }
+            ;
+        }
+        ;
     });
-    /*sel.addEventListener('change', function(event): any {
-        let ev: string = event.target.value;
-        console.log(ev);
-
-    })*/
+    sel.addEventListener('change', function (event) {
+        var prova = document.querySelectorAll('.prova');
+        var optVal = event.target.value;
+        prova.forEach(function (element) {
+            if (element.id == optVal) {
+                element.classList.remove('hide');
+            }
+            else {
+                element.classList.add('hide');
+            }
+        });
+    });
 });

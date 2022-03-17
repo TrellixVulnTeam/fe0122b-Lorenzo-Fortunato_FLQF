@@ -53,10 +53,18 @@ fetch('Abbigliamento.json')
             let capoDiAbbigliamento = new Vestiti(e.id, e.codprod, e.collezione, e.capo, e.modello, e.quantita, e.colore, e.prezzoivaesclusa, e.prezzoivainclusa, e.disponibile, e.saldo);
             console.log(capoDiAbbigliamento);
             
-            /*let capo: string = e.capo;
+            let capo: string = e.capo;
             let opt: Element = document.createElement('option');
+            opt.setAttribute('value', e.id)
             opt.innerHTML = capo;
             sel.append(opt)
+
+            let div: any = document.createElement('div');
+            let main: any = document.querySelector('main');
+            div.setAttribute('id', e.id);
+            div.classList.add('prova');
+            div.classList.add('hide');
+            main.append(div);
 
             for (let prop in e){
                 if(prop == 'id' || prop == 'codprod' || prop == 'modello'){
@@ -65,41 +73,34 @@ fetch('Abbigliamento.json')
                     let cartellino: any = document.querySelector('#specifiche');
                     let spec: any = document.createElement('p');
                     spec.innerText = e[prop];
-                    cartellino.append(spec)
+                    div.append(spec);
 
 
                 };
                 
-            }*/
+            };
 
 
-
-
-        })
-
-        /*sel.addEventListener('change', function(event): any {
-            let ev: string = event.target.value;
-            console.log(ev);
-
-        })*/
-
-    })
+            
+            
+            
+        });
+        
+        
+        sel.addEventListener('change', function(event: any): any {
+            let prova: any = document.querySelectorAll('.prova');
+            let optVal: any = event.target.value;
+            prova.forEach((element: any) => {
+                if(element.id == optVal){
+                    element.classList.remove('hide');
+                }else{
+                    element.classList.add('hide');
+                }
     
+            });
+            
 
+        });
 
-
+    });
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
