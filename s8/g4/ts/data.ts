@@ -1,6 +1,13 @@
 interface Smartphone {
     carica: number
     nChiamate: number
+
+    ricarica(unaRicarica: any): void
+    chiamata(minutiDurata: any): void 
+    number404(): number 
+    getNumeroChiamate(): number
+    azzeraChiamate(): void 
+
 };
 
 
