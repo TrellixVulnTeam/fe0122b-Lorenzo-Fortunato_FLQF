@@ -16,7 +16,7 @@ var Vestiti = /** @class */ (function () {
         return this.prezzoivaesclusa * this.saldo / 100;
     };
     Vestiti.prototype.getAcquistoCapo = function () {
-        return this.prezzoivainclusa - this.getSaldoCapo();
+        return Math.round(this.prezzoivainclusa - this.getSaldoCapo());
     };
     return Vestiti;
 }());
@@ -31,18 +31,18 @@ fetch('Abbigliamento.json')
     var sel = document.querySelector('#sel');
     data.forEach(function (e) {
         var capoDiAbbigliamento = new Vestiti(e.id, e.codprod, e.collezione, e.capo, e.modello, e.quantita, e.colore, e.prezzoivaesclusa, e.prezzoivainclusa, e.disponibile, e.saldo);
-        console.log(capoDiAbbigliamento);
+        // console.log(capoDiAbbigliamento);
         var capo = e.capo;
         var opt = document.createElement('option');
         opt.setAttribute('value', e.id);
         opt.innerHTML = capo;
         sel.append(opt);
         var div = document.createElement('div');
-        var main = document.querySelector('main');
+        var blocco = document.querySelector('.attach');
         div.setAttribute('id', e.id);
         div.classList.add('prova');
         div.classList.add('hide');
-        main.append(div);
+        blocco.append(div);
         for (var prop in e) {
             if (prop == 'id' || prop == 'codprod' || prop == 'modello') {
                 continue;
@@ -56,6 +56,11 @@ fetch('Abbigliamento.json')
             ;
         }
         ;
+        console.log(capoDiAbbigliamento.getAcquistoCapo());
+        var prezzoFinale = capoDiAbbigliamento.getAcquistoCapo();
+        var para = document.createElement('p');
+        para.innerHTML = "".concat(prezzoFinale, "\u20AC");
+        div.append(para);
     });
     sel.addEventListener('change', function (event) {
         var prova = document.querySelectorAll('.prova');

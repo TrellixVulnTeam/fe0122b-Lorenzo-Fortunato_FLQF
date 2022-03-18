@@ -30,7 +30,7 @@ class Vestiti {
     }
 
     getAcquistoCapo(): number {
-        return this.prezzoivainclusa - this.getSaldoCapo()
+        return Math.round(this.prezzoivainclusa - this.getSaldoCapo());
     }
 }
 
@@ -51,7 +51,7 @@ fetch('Abbigliamento.json')
         let sel: any = document.querySelector('#sel');
         data.forEach((e: Vestiti) => {
             let capoDiAbbigliamento = new Vestiti(e.id, e.codprod, e.collezione, e.capo, e.modello, e.quantita, e.colore, e.prezzoivaesclusa, e.prezzoivainclusa, e.disponibile, e.saldo);
-            console.log(capoDiAbbigliamento);
+            // console.log(capoDiAbbigliamento);
             
             let capo: string = e.capo;
             let opt: Element = document.createElement('option');
@@ -60,11 +60,11 @@ fetch('Abbigliamento.json')
             sel.append(opt)
 
             let div: any = document.createElement('div');
-            let main: any = document.querySelector('main');
+            let blocco: any = document.querySelector('.attach');
             div.setAttribute('id', e.id);
             div.classList.add('prova');
             div.classList.add('hide');
-            main.append(div);
+            blocco.append(div);
 
             for (let prop in e){
                 if(prop == 'id' || prop == 'codprod' || prop == 'modello'){
@@ -79,11 +79,13 @@ fetch('Abbigliamento.json')
                 };
                 
             };
-
-
             
             
-            
+            console.log(capoDiAbbigliamento.getAcquistoCapo());
+            let prezzoFinale: number = capoDiAbbigliamento.getAcquistoCapo();
+            let para: Element = document.createElement('p');
+            para.innerHTML = `${prezzoFinale}€`;
+            div.append(para);
         });
         
         
@@ -93,6 +95,7 @@ fetch('Abbigliamento.json')
             prova.forEach((element: any) => {
                 if(element.id == optVal){
                     element.classList.remove('hide');
+                    
                 }else{
                     element.classList.add('hide');
                 }
@@ -103,4 +106,7 @@ fetch('Abbigliamento.json')
         });
 
     });
+
+    
+
     

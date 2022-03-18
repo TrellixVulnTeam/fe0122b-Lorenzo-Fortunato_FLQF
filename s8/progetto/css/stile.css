@@ -1,3 +1,31 @@
 .hide {
     display: none;
 }
+
+main {
+    background-color: rgb(187, 184, 184);
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 60px;
+    padding: 20px;
+}
+
+select {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding: 3px;
+}
+
+#specifiche {
+    padding: 20px 100px;
+    font-weight: bold;
+    font-size: 1.3rem;;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
