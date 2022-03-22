@@ -43,20 +43,46 @@ fetch('../audio.json')
 
             function playAudio(suono){
                 suono.play();
-            }
+            };
 
-        })
-
-        
+        });
 
 
-
+    });
 
 
 
 
+////// VIDEO //////
+fetch('../video.json')
+    .then(response => response.json())
+    .then(dataVideo => {
+
+        console.log(dataVideo);
+        dataVideo.forEach(elementVideo => {
+            let yt = document.querySelector('.video');
+            let aFileVideo = document.createElement('a');
+            aFileVideo.style.display = 'block';
+            aFileVideo.innerText = elementVideo.titolo;
+            aFileVideo.setAttribute('href', '#')
+            // console.log(elementVideo.titolo)
+            yt.append(aFileVideo)
+
+            aFileVideo.addEventListener('click', function(){
+                let sorgenteVideo = document.querySelector('#sorgenteVideo');
+                sorgenteVideo.setAttribute('src', elementVideo.url);
+
+                playVideo(sorgenteVideo);
 
 
 
+            });
 
-    })
+            function playVideo(visione){
+                visione.play();
+            };
+
+        });
+
+
+    });
