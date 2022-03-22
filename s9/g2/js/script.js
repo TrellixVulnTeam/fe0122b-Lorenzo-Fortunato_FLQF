@@ -35,10 +35,15 @@ fetch('../audio.json')
                 let sorgenteAudio = document.querySelector('#sorgenteAudio');
                 sorgenteAudio.setAttribute('src', element.url);
 
+                playAudio(sorgenteAudio);
+
 
 
             });
 
+            function playAudio(suono){
+                suono.play();
+            }
 
         })
 
