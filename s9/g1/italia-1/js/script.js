@@ -85,8 +85,11 @@ fetch('province.json')
     
                 if(scelta == e.prov_nome){
                     let imgReg = document.querySelector('#imgReg');
+                    let introReg = document.createElement('h6');
+                    introReg.innerText = 'Lo stemma di questa regione è:';
+                    imgReg.append(introReg);
                     let imgR = document.createElement('img');
-                    imgR.setAttribute('src', 'e.prov_url');
+                    imgR.setAttribute('src', e.prov_url);
                     imgReg.append(imgR);
                 }
     
