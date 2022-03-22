@@ -23,7 +23,7 @@ fetch('../audio.json')
 
         // console.log(data);
         data.forEach(element => {
-            let mozart = document.querySelector('.audio');
+            let mozart = document.querySelector('.a');
             let aFile = document.createElement('a');
             aFile.style.display = 'block';
             aFile.innerText = element.titolo;
@@ -60,7 +60,7 @@ fetch('../video.json')
 
         // console.log(dataVideo);
         dataVideo.forEach(elementVideo => {
-            let yt = document.querySelector('.video');
+            let yt = document.querySelector('.aVideo');
             let aFileVideo = document.createElement('a');
             aFileVideo.style.display = 'block';
             aFileVideo.innerText = elementVideo.titolo;

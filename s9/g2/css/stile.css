@@ -17,5 +17,38 @@ a {
     border-radius: 5px;
     margin-bottom: 2px;
     box-shadow: 2px 2px 1px grey;
+    width: 200px;
 
 }
+
+a:hover {
+    color: rgb(22, 22, 22);
+    background: linear-gradient(180deg, rgb(218, 200, 231) 0%, rgb(240, 240, 240) 100%);
+
+}
+
+#sorgenteAudio {
+    width: 250px;
+    padding: 10px;
+}
+
+.itemAudio {
+    padding: 50px 10px;
+}
+
+.audio {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 0;
+    
+}
+
+.video {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 0;
+    
+}
+
