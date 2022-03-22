@@ -58,7 +58,7 @@ fetch('../video.json')
     .then(response => response.json())
     .then(dataVideo => {
 
-        console.log(dataVideo);
+        // console.log(dataVideo);
         dataVideo.forEach(elementVideo => {
             let yt = document.querySelector('.video');
             let aFileVideo = document.createElement('a');
