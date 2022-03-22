@@ -26,25 +26,175 @@ let selRegioni = document.querySelector('#regioni');
 fetch('regioni.json')
     .then(response => response.json())
     .then(data => {
-
+        
         data.forEach(element => {
             let regioni = new Regione (element.prov_regione);
             // console.log(regioni);
-
+            // console.log(regioni['prov_regione'])
             for(prop in element){
                 let regione = document.createElement('option');
                 regione.innerText = element[prop];
-               let valRegione = regione.setAttribute('value', element[prop]);
+                let valRegione = regione.setAttribute('value', element[prop]);
                 selRegioni.append(regione);
 
             }
         });
-        // console.log(regioni)
+
+ 
 
     });
 
-/////////// SEL PROVINCE ///////////
+/////SEL PROVINCE ////
+let selCitta = document.querySelector('#citta');
+fetch('province.json')
+    .then(response => response.json())
+    .then(prov => {
+        console.log(prov)
+       
+        
+        prov.forEach(e => {
+            // console.log(e.prov_reg)
+            let optProv = document.createElement('option');
+            optProv.innerText = e.prov_nome;
+            optProv.classList.add('hide');
+            selCitta.append(optProv);
+            
+            
+            function boh(pippo){
+                if(e.prov_reg == pippo){
+                    optProv.classList.remove('hide');
+                }else{
+                    optProv.classList.add('hide');
+                }
+                
+                
+            }
+            
+            
+            
+            selRegioni.addEventListener('change', function(e){
+                let evento = e.target.value;
+                
+                boh(evento);
+                
+    
+            });
+            
+            selCitta.addEventListener('change', function(evento){
+                let scelta = evento.target.value;
+    
+                if(scelta == e.prov_nome){
+                    let imgReg = document.querySelector('#imgReg');
+                    let imgR = document.createElement('img');
+                    imgR.setAttribute('src', 'e.prov_url');
+                    imgReg.append(imgR);
+                }
+    
+    
+            });
+        });
 
+
+        
+        
+    });
+
+
+
+
+
+
+
+    
+                    // for(prop in e){
+                    //     if(prop == 'prov_nome'){
+                    //         let optProv = document.createElement('option');
+                    //         optProv.innerText = e[prop];
+                    //         optProv.classList.remove('hide');
+                    //         selCitta.append(optProv);
+
+
+
+
+    
+                                    // if(x = 0) {
+                                    //     let optProv = document.createElement('option');
+                                    //     optProv.innerText = e[prop];
+                                    //     optProv.classList.add('hide');
+                                    //     selCitta.append(optProv);
+                                    // }
+
+
+
+
+
+       
+        /*prov.forEach(e => {
+            // console.log(e['prov_nome'] )
+            for(prop in e){
+
+                if(prop == 'prov_nome'){
+                    let province = document.createElement('option');
+                    province.innerText = e[prop];
+                    let attrProvince = province.setAttribute('id', e[prop]);
+                    let classProvince = province.classList.add('hide');
+                    selCitta.append(province);
+
+                    
+                }else{
+                    continue;
+                };
+                
+            };
+            
+            console.log(e['prov_reg'])
+            
+            
+            
+            
+            selRegioni.addEventListener('change', function(event){
+               
+                let evento = event.target.value;
+                // console.log(evento);
+                matchSelect(evento, e['prov_reg']);
+                
+                
+                
+                
+                
+                
+                
+            });
+        });
+        
+        
+        function matchSelect(pippo, claudio){
+            if(pippo == claudio){
+               province.classList.remove('hide');
+            }
+        };
+
+
+
+    })*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////// SEL PROVINCE ///////////
+/*
 let selCitta = document.querySelector('#citta');
 fetch('province.json')
     .then(response => response.json())
@@ -81,7 +231,7 @@ fetch('province.json')
         
     });
 
-
+*/
 
 
 
